@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-   --main-color:#8e44ad;
+   --main-color:#444bad;
    --black:#222;
    --white:#fff;
    --light-black:#777;
-   --light-white:#fff9;
+   --light-white:rgba(255, 255, 255, 0.771);
    --dark-bg:rgba(0,0,0,.7);
    --light-bg:#eee;
    --border:.1rem solid var(--black);
@@ -95,21 +95,21 @@ section{
    z-index: 1000;
    background-color: var(--white);
    display: flex;
-   padding-top: 2rem;
-   padding-bottom: 2rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
    box-shadow: var(--box-shadow);
    align-items: center;
    justify-content: space-between;
 }
 
-.header .logo{
-   font-size: 2.5rem;
-   color:var(--black);
+.header .logo img {
+   height: 55px;
+   width: auto;
 }
 
 .header .navbar a{
-   font-size: 2rem;
-   margin-left: 2rem;
+   font-size: 1.8rem;
+   margin-left: 1.5rem;
    color:var(--black);
 }
 
@@ -118,7 +118,7 @@ section{
 }
 
 #menu-btn{
-   font-size: 2.5rem;
+   font-size: 2rem;
    cursor: pointer;
    color:var(--black);
    display: none;
@@ -612,7 +612,16 @@ section{
 
 
 
+.header {
+   height: 60px; /* Adjust this value as needed */
+   display: flex;
+   align-items: center; /* This will vertically center the logo if the header height is greater than the logo height */
+}
 
+.logo img {
+   height: 50px; /* Adjust this value as needed */
+   width: auto; /* This will maintain the aspect ratio of the logo */
+}
 
 
 

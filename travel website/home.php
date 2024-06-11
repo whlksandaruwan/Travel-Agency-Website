@@ -22,7 +22,9 @@
 
 <section class="header">
 
-   <a href="home.php" class="logo">travel.</a>
+   <a href="home.php" class="logo">
+      <img src="New Photos/logo.png" alt="Logo" style="height: 50px; width: auto;">
+   </a>
 
    <nav class="navbar">
       <a href="home.php">home</a>
@@ -45,7 +47,7 @@
 
       <div class="swiper-wrapper">
 
-         <div class="swiper-slide slide" style="background:url(images/home-slide-1.jpg) no-repeat">
+         <div class="swiper-slide slide" style="background:url('New Photos/Home Page.jpg') no-repeat">
             <div class="content">
                <span>explore, discover, travel</span>
                <h3>travel arround the world</h3>
@@ -53,7 +55,7 @@
             </div>
          </div>
 
-         <div class="swiper-slide slide" style="background:url(images/home-slide-2.jpg) no-repeat">
+         <div class="swiper-slide slide" style="background:url('New Photos/Srilanka.jpg') no-repeat">
             <div class="content">
                <span>explore, discover, travel</span>
                <h3>discover the new places</h3>
