@@ -89,6 +89,11 @@ section{
    color:var(--black);
 }
 
+.header .pics{
+   display: none;
+   align-items: center;
+}
+
 .header{
    position: sticky;
    top:0; left:0; right:0;

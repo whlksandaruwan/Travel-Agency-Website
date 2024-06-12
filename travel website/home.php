@@ -11,27 +11,27 @@
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+   
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
    
-<!-- header section starts  -->
-
-<section class="header">
-
+   </head>
+   <body>
+      
+      <!-- header section starts  -->
+      
+      <section class="header">
+         <img class="pic" src="New Photos/logo.png" alt="Logo" style="height: 50px; width: auto;">
+         
    <a href="home.php" class="logo">
-      <img src="New Photos/logo.png" alt="Logo" style="height: 50px; width: auto;">
-   </a>
-
-   <nav class="navbar">
-      <a href="home.php">home</a>
-      <a href="about.php">about</a>
-      <a href="package.php">package</a>
-      <a href="book.php">book</a>
-   </nav>
+      </a>
+      
+      <nav class="navbar">
+         <a href="home.php">home</a>
+         <a href="about.php">about</a>
+         <a href="package.php">package</a>
+         <a href="book.php">book</a>
+         </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
 
@@ -42,7 +42,7 @@
 <!-- home section starts  -->
 
 <section class="home">
-
+   
    <div class="swiper home-slider">
 
       <div class="swiper-wrapper">
@@ -54,7 +54,7 @@
                <a href="package.php" class="btn">discover more</a>
             </div>
          </div>
-
+         
          <div class="swiper-slide slide" style="background:url('New Photos/Srilanka.jpg') no-repeat">
             <div class="content">
                <span>explore, discover, travel</span>

@@ -102,9 +102,10 @@ section{
    justify-content: space-between;
 }
 
-.header .logo img {
+.header .logo img{
    height: 55px;
    width: auto;
+   text-align: center;
 }
 
 .header .navbar a{
@@ -230,8 +231,8 @@ section{
    flex-wrap: wrap;
 }
 
-.home-about .image{
-   flex:1 1 41rem;
+.home-about .image {
+   flex: 1 1 41rem; 
 }
 
 .home-about .image img{
