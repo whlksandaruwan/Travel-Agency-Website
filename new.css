@@ -229,51 +229,39 @@ section{
    padding-top: 1rem;
 }
 
+
+
+
 .home-about {
-   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  max-width: 1200px; /* Adjust based on your layout width */
-  margin: auto;
-}
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    max-width: 1200px; /* Adjust based on your layout width */
+    margin: auto; /* Center the section */
+  }
+  
+  .home-about .image-test {
+    flex: 1; /* Video will take up half the space */
+  }
+  
+  .home-about .video-test {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .home-about .content {
+    flex: 1; /* Content will take up the other half of the space */
+    padding-left: 20px; /* Add some space between the video and the text */
+  }
 
-.home-about .image-test,
-.home-about .content {
-  flex: 1; /* Both children will take up equal space */
-}
-
-.video-test{
-   width: 50%;
-}
-
-.home-about .image {
-   flex: 1 1 41rem;
-}
-
-.home-about .image img,
-.home-about .image video {
-   width: 600;
-   height: 400;
-}
-
-.home-about .content {
-   flex: 1 1 41rem;
-   padding: 3rem;
-   background: var(--light-bg);
-}
-
-.home-about .content h3 {
-   font-size: 3rem;
-   color: var(--black);
-}
-
-.home-about .content p {
-   font-size: 1.5rem;
-   padding: 1rem 0;
-   line-height: 2;
-   color: var(--black);
-}
+  .home-about h3{
+    font-size: 2.5em;
+  }
+  .home-about p {
+    font-size: 1.5em;
+  }
+  
 
 .home-packages{
    background: var(--light-bg);
