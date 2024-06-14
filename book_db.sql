@@ -31,7 +31,7 @@ CREATE TABLE `book_form` (
   `id` varchar(20) NOT NULL,
   `name` varchar(30) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `phone` int(10) NOT NULL,
+  `phone` varchar(20) NOT NULL,
   `address` varchar(50) NOT NULL,
   `location` varchar(50) NOT NULL,
   `guests` int(2) NOT NULL,
