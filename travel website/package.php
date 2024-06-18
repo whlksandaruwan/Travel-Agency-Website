@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>package</title>
+   <title>packege</title>
 
    <!-- swiper css link  -->
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -27,7 +27,7 @@
    <nav class="navbar">
       <a href="home.php">home</a>
       <a href="about.php">about</a>
-      <a href="package.php">package</a>
+      <a href="packege.php">packege</a>
       <a href="book.php">book</a>
    </nav>
 
@@ -38,12 +38,12 @@
 <!-- header section ends -->
 
 <div class="heading" style="background:url(images/header-bg-2.png) no-repeat">
-   <h1>packages</h1>
+   <h1>packeges</h1>
 </div>
 
-<!-- packages section starts  -->
+<!-- packeges section starts  -->
 
-<section class="packages">
+<section class="packeges">
 
    <h1 class="heading-title">top destinations</h1>
 
@@ -187,7 +187,7 @@
 
 </section>
 
-<!-- packages section ends -->
+<!-- packeges section ends -->
 
 
 
@@ -214,7 +214,7 @@
          <h3>quick links</h3>
          <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
          <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-         <a href="package.php"> <i class="fas fa-angle-right"></i> package</a>
+         <a href="packege.php"> <i class="fas fa-angle-right"></i> packege</a>
          <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
       </div>
 
