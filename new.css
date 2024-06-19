@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-   --main-color:#8e44ad;
+   --main-color:#4b54df;
    --black:#222;
    --white:#fff;
    --light-black:#777;
@@ -321,6 +321,7 @@ section{
    color:var(--light-black);
    line-height: 2;
    padding:1rem 0;
+   text-align: center;
 }
 
 .home-packeges .load-more{
