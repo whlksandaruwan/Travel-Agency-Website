@@ -22,13 +22,21 @@
 
 <section class="header">
 
-   <a href="home.php" class="logo">travel.</a>
+   <a href="home.html" class="logo">
+      <img src="New Photos/logo.png" alt="Logo" />
+   </a>
 
    <nav class="navbar">
-      <a href="home.php">home</a>
-      <a href="about.php">about</a>
-      <a href="packege.php">packege</a>
-      <a href="book.php">book</a>
+      <a href="home.html">home</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="about.html">about</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="packeges.html">packeges</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="book.html">booking</a>
+   </nav>
+   <nav>
+      <i class="fas fa-user" id="login-btn"></i>
    </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
@@ -46,13 +54,13 @@
 <section class="about">
 
    <div class="image">
-      <img src="images/about-img.jpg" alt="">
+      <img src="New Photos/Why you choose us.jpg" alt="">
    </div>
 
    <div class="content">
       <h3>why choose us?</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure numquam nulla iusto corporis dolor commodi libero, vitae obcaecati optio rerum ab culpa nesciunt, earum mollitia quasi ipsam non. Aliquid, iure.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum, delectus voluptate aliquam quaerat iusto repellendus error nulla ab atque.</p>
+      <p>At TRAVEL Agency, we offer personalized travel experiences with expert local knowledge. Enjoy competitive pricing, exceptional customer service, and sustainable tourism practices while exploring Sri Lanka’s hidden gems.</p>
+      <p>Your safety is our priority. We ensure reliable, top-quality services and memorable adventures. Choose TRAVEL Agency for a seamless, unforgettable journey through the best of Sri Lanka. Contact us today!</p>
       <div class="icons-container">
          <div class="icons">
             <i class="fas fa-map"></i>
@@ -91,10 +99,10 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus facilis laudantium magnam saepe magni ullam possimus laborum voluptas, veniam ipsum officiis quae doloribus minima ut quis. Molestiae qui distinctio possimus?</p>
-            <h3>john deo</h3>
+            <p>"Traveling with TRAVEL Agency was a fantastic experience! Their personalized service and local expertise made our Sri Lanka trip unforgettable. From seamless planning to amazing adventures, everything was perfect. Highly recommended!"</p>
+            <h3>Yumin Menthaka</h3>
             <span>traveler</span>
-            <img src="images/pic-1.png" alt="">
+            <img src="New Photos/Yumin.jpg" alt="">
          </div>
 
          <div class="swiper-slide slide">
@@ -104,10 +112,10 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus repellendus et suscipit optio similique totam aut laborum ullam sequi! In!</p>
-            <h3>john deo</h3>
+            <p>"TRAVEL Agency made our Sri Lanka vacation truly special. Their attention to detail and exceptional service ensured a stress-free and memorable trip. We'll definitely book with them again!"</p>
+            <h3>Hasith Rathnayaka</h3>
             <span>traveler</span>
-            <img src="images/pic-2.png" alt="">
+            <img src="New Photos/Hasith.jpg" alt="">
          </div>
 
          <div class="swiper-slide slide">
@@ -116,10 +124,10 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim deserunt, ab at ea iste odio placeat doloribus eum dolores tempore obcaecati, dolore esse aperiam. Excepturi ad quo distinctio, dignissimos voluptate, dolores, saepe animi eum atque sint esse ab exercitationem!</p>
-            <h3>john deo</h3>
+            <p>"TRAVEL Agency made our Sri Lanka trip unforgettable. Their personalized service, local expertise, and seamless planning exceeded our expectations. Highly recommended for a memorable and stress-free vacation!"</p>
+            <h3>Travel With Wife</h3>
             <span>traveler</span>
-            <img src="images/pic-3.png" alt="">
+            <img src="New Photos/Travel with wife.jpg" alt="">
          </div>
 
          <div class="swiper-slide slide">
@@ -130,10 +138,10 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae cum quibusdam odio dignissimos nemo?</p>
-            <h3>john deo</h3>
+            <p>"Our experience with TRAVEL Agency in Sri Lanka was exceptional. They crafted a seamless itinerary with great attention to detail, ensuring a truly memorable and enjoyable journey. Highly recommended!"</p>
+            <h3>Isuru Sulochana</h3>
             <span>traveler</span>
-            <img src="images/pic-4.png" alt="">
+            <img src="New Photos/Isuru.jpg" alt="">
          </div>
 
          <div class="swiper-slide slide">
@@ -142,10 +150,10 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus facilis laudantium magnam saepe magni ullam possimus laborum voluptas, veniam ipsum officiis quae doloribus minima ut quis. Molestiae qui distinctio possimus?</p>
-            <h3>john deo</h3>
+            <p>"TRAVEL Agency made our Sri Lanka adventure perfect. Exceptional service, local expertise, and seamless planning. Highly recommend them!"</p>
+            <h3>Wathsala Bandara</h3>
             <span>traveler</span>
-            <img src="images/pic-5.png" alt="">
+            <img src="New Photos/Wathsala.jpg" alt="">
          </div>
 
          <div class="swiper-slide slide">
@@ -155,10 +163,10 @@
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus facilis laudantium magnam saepe magni ullam possimus laborum voluptas, veniam ipsum officiis quae doloribus minima ut quis. Molestiae qui distinctio possimus?</p>
-            <h3>john deo</h3>
+            <p>"TRAVEL Agency made our Sri Lanka vacation extraordinary. Their personalized service and deep local knowledge created a unique and unforgettable travel experience. Highly recommend for anyone visiting Sri Lanka!"</p>
+            <h3>Chamitha Thathsaranath</h3>
             <span>traveler</span>
-            <img src="images/pic-6.png" alt="">
+            <img src="New Photos/Chamitha.jpg" alt="">
          </div>
 
       </div>
@@ -191,10 +199,10 @@
 
       <div class="box">
          <h3>quick links</h3>
-         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
-         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-         <a href="packege.php"> <i class="fas fa-angle-right"></i> packege</a>
-         <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="packeges.html"> <i class="fas fa-angle-right"></i> packeges</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> booking</a>
       </div>
 
       <div class="box">
@@ -206,24 +214,24 @@
       </div>
 
       <div class="box">
-         <h3>contact info</h3>
-         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-         <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-         <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
-         <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104 </a>
-      </div>
-
-      <div class="box">
          <h3>follow us</h3>
          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
       </div>
+      
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +94 76 121 8033 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +94 11 333 2445 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> TRAVELagency@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> 299 Gall Rd, Colombo 00300</a>
+      </div>
 
    </div>
 
-   <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+   
 
 </section>
 

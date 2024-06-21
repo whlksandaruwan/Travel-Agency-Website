@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
    $arrivals = $_POST['arrivals'];
    $leaving = $_POST['leaving'];
 
-   $sql = "INSERT INTO `book`(`id`, `name`, `email`, `phone`, `address`, `location`, `guests`, `arrival`, `leaving`) VALUES ('$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving')";
+   $sql = "INSERT INTO `book`(`name`, `email`, `phone`, `address`, `location`, `guests`, `arrival`, `leaving`) VALUES ('$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving')";
 
    if ($conn->query($sql) === TRUE) {
       echo "Booking successful!";
@@ -53,15 +53,28 @@ $conn->close();
 <!-- header section starts  -->
  
 <section class="header">
-   <a href="home.php" class="logo">travel.</a>
+
+   <a href="home.html" class="logo">
+      <img src="New Photos/logo.png" alt="Logo" />
+   </a>
+
    <nav class="navbar">
-      <a href="home.php">home</a>
-      <a href="about.php">about</a>
-      <a href="packege.php">package</a>
-      <a href="book.php">book</a>
+      <a href="home.html">home</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="about.html">about</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="packeges.html">packeges</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="book.html">booking</a>
    </nav>
+   <nav>
+      <i class="fas fa-user" id="login-btn"></i>
+   </nav>
+
    <div id="menu-btn" class="fas fa-bars"></div>
+
 </section>
+
 <!-- header section ends -->
 
 <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
@@ -144,15 +157,14 @@ $conn->close();
 <!-- footer section starts  -->
 
 <section class="footer">
-
-   <div class="box-container">
+<div class="box-container">
 
       <div class="box">
          <h3>quick links</h3>
-         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
-         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-         <a href="packege.php"> <i class="fas fa-angle-right"></i> packege</a>
-         <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="packeges.html"> <i class="fas fa-angle-right"></i> packeges</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> booking</a>
       </div>
 
       <div class="box">
@@ -164,24 +176,22 @@ $conn->close();
       </div>
 
       <div class="box">
-         <h3>contact info</h3>
-         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-         <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-         <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
-         <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104 </a>
-      </div>
-
-      <div class="box">
          <h3>follow us</h3>
          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
       </div>
+      
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +94 76 121 8033 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +94 11 333 2445 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> TRAVELagency@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> 299 Gall Rd, Colombo 00300</a>
+      </div>
 
    </div>
-
-   <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
 
 </section>
 

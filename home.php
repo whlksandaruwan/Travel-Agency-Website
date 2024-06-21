@@ -11,27 +11,33 @@
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-   
+
    <!-- custom css file link  -->
    <link rel="stylesheet" href="new.css">
+
+</head>
+<body>
    
-   </head>
-   <body>
-      
-      <!-- header section starts  -->
-      
-      <section class="header">
-         <img class="pic" src="New Photos/logo.png" alt="Logo" style="height: 50px; width: auto;">
-         
-   <a href="home.php" class="logo">
-      </a>
-      
-      <nav class="navbar">
-         <a href="home.php">home</a>
-         <a href="about.php">about</a>
-         <a href="packege.php">packege</a>
-         <a href="book.php">book</a>
-         </nav>
+<!-- header section starts  -->
+
+<section class="header">
+
+   <a href="home.html" class="logo">
+      <img src="New Photos/logo.png" alt="Logo" />
+   </a>
+
+   <nav class="navbar">
+      <a href="home.html">home</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="about.html">about</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="packeges.html">packeges</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="book.html">booking</a>
+   </nav>
+   <nav>
+      <i class="fas fa-user" id="login-btn"></i>
+   </nav>
 
    <div id="menu-btn" class="fas fa-bars"></div>
 
@@ -42,32 +48,48 @@
 <!-- home section starts  -->
 
 <section class="home">
-   
+
    <div class="swiper home-slider">
 
       <div class="swiper-wrapper">
 
-         <div class="swiper-slide slide" style="background:url('New Photos/Home Page.jpg') no-repeat">
+         <div class="swiper-slide slide" style="background: url('New Photos/Srilanka\ 5.jpg') no-repeat">
             <div class="content">
                <span>explore, discover, travel</span>
-               <h3>travel arround the world</h3>
-               <a href="packege.php" class="btn">discover more</a>
-            </div>
-         </div>
-         
-         <div class="swiper-slide slide" style="background:url('New Photos/Srilanka.jpg') no-repeat">
-            <div class="content">
-               <span>explore, discover, travel</span>
-               <h3>discover the new places</h3>
-               <a href="packege.php" class="btn">discover more</a>
+               <h3>travel around Sri Lanka</h3>
+               <a href="packeges.html" class="btn">discover more</a>
             </div>
          </div>
 
-         <div class="swiper-slide slide" style="background:url(images/home-slide-3.jpg) no-repeat">
+         <div class="swiper-slide slide" style="background: url('New Photos/Srilanka.jpg') no-repeat;">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>discover the new places</h3>
+               <a href="packeges.html" class="btn">discover more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background:url('New Photos/Srilanka\ 3.jpg') no-repeat">
             <div class="content">
                <span>explore, discover, travel</span>
                <h3>make your tour worthwhile</h3>
-               <a href="packege.php" class="btn">discover more</a>
+               <a href="packeges.html" class="btn">discover more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background:url('New Photos/Srilanka\ 6.jpg') no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>Find your perfect adventure</h3>
+               <a href="packeges.html" class="btn">discover more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background:url('New Photos/Srilanka 2.jpg') no-repeat">
+            <div class="content">
+               <span>explore, discover, travel</span>
+               <h3>Your world awaits</h3>
+               <a href="packeges.html" class="btn">discover more</a>
             </div>
          </div>
          
@@ -128,19 +150,19 @@
 
 <!-- home about section starts  -->
 
-<section class="home-about">
+<section style="align-items: flex-start; display: flex;" class="home-about">
 
-   <div class="image">
-      <img src="images/about-img.jpg" alt="">
-   </div>
-
-   <div class="content">
-      <h3>about us</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita et, recusandae nobis fugit modi quibusdam ea assumenda, nulla quisquam repellat rem aliquid sequi maxime sapiente autem ipsum? Nobis, provident voluptate?</p>
-      <a href="about.php" class="btn">read more</a>
-   </div>
-
-</section>
+    <div class="image-test">
+       <video style="width: 80%;" class="video-test" src="New Photos/About.mp4" autoplay muted></video>
+    </div>
+ 
+    <div class="content">
+       <h3>about us</h3>
+       <p>We are your dedicated travel experts, passionate about crafting unforgettable adventures tailored to your unique preferences. With years of experience and a deep love for exploration, we specialize in creating personalized itineraries that blend culture, adventure, and relaxation.</p>
+       <a href="about.html" class="btn">read more</a>
+    </div>
+ 
+ </section>
 
 <!-- home about section ends -->
 
@@ -154,56 +176,93 @@
 
       <div class="box">
          <div class="image">
-            <img src="images/img-1.jpg" alt="">
+            <img src="New Photos/Kandy.jpg" alt="">
          </div>
          <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-            <a href="book.php" class="btn">book now</a>
+            <h3>Kandy</h3>
+            <p>Explore Kandy's stunning landscapes, rich culture, and unforgettable experiences today!</p>
+            <br>
+            <h2>Top Attractions:</h2>
+            <p>Perandeniya Botanical Garden,
+               Temple of the Tooth Relic,
+               Kandy Lake,
+               Udawattakele Forest Reserve,
+               Royal Palace of Kandy,
+               Kandy View Point,
+               Ceylon Tea Museum,
+               Ambuluwawa Tower
+            </p>
+            <h2><p>Price: Starting From </h2><h2>Rs.40,000</h2></p>
+            <a href="book.html" class="btn">book now</a>
          </div>
       </div>
 
       <div class="box">
          <div class="image">
-            <img src="images/img-2.jpg" alt="">
+            <img src="New Photos/Ella.jpg" alt="">
          </div>
          <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-            <a href="book.php" class="btn">book now</a>
+            <h3>Ella</h3>
+            <p>Explore stunning landscapes, breathtaking destinations, and unforgettable beauty with Ella.</p>
+            <br>
+            <h2>Top Attractions:</h2>
+            <p>Nine Arches Bridge,
+               Ravana Falls,
+               Ella Rock,
+               Ceylon Tea Factory,
+               Little Adam's Peak,
+               Dhowa Rock Temple,
+               Mahamevnawa Monastery,
+               Demodara Railway Loop,
+               Diyaluma Falls
+            </p>
+            <h2><p>Price: Starting From </h2><h2>Rs.50,000</h2></p>
+            <a href="book.html" class="btn">book now</a>
          </div>
       </div>
       
       <div class="box">
          <div class="image">
-            <img src="images/img-3.jpg" alt="">
+            <img src="New Photos/Sigiriya.jpg" alt="">
          </div>
          <div class="content">
-            <h3>adventure & tour</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, sint!</p>
-            <a href="book.php" class="btn">book now</a>
+            <h3>Sigiriya</h3>
+            <p>Experience Sigiriya's ancient wonder, panoramic views, and cultural heritage today!</p>
+            <br>
+            <h2>Top Attractions:</h2>
+            <p>Sigiriya Rock Fortress,
+               Pidurangala Rock,
+               Dambulla Cave Temple,
+               Minneriya National Park,
+               Sigiriya Museum,
+               Habarana Lake,
+               Sigiriya Village Tour,
+               Sigiriya Museum
+               <br>
+               <br>
+            </p>
+            <h2><p>Price: Starting From </h2><h2>Rs.40,000</h2></p>
+            <a href="book.html" class="btn">book now</a>
          </div>
       </div>
 
    </div>
 
-   <div class="load-more"> <a href="packege.php" class="btn">load more</a> </div>
+   <div class="load-more"> <a href="packeges.html" class="btn">load more</a> </div>
 
 </section>
 
 <!-- home packeges section ends -->
 
-<!-- home offer section starts  -->
+<!-- home banner image section starts  -->
 
-<section class="home-offer">
-   <div class="content">
-      <h3>upto 50% off</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure tempora assumenda, debitis aliquid nesciunt maiores quas! Magni cumque quaerat saepe!</p>
-      <a href="book.php" class="btn">book now</a>
-   </div>
+<section class="home-banner">
+   <div class="banner">
+      <img src="New Photos/Banner home page.jpg" alt="Banner image">
+    </div>
 </section>
 
-<!-- home offer section ends -->
+<!-- home banner image section ends -->
 
 
 
@@ -229,10 +288,10 @@
 
       <div class="box">
          <h3>quick links</h3>
-         <a href="home.php"> <i class="fas fa-angle-right"></i> home</a>
-         <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
-         <a href="packege.php"> <i class="fas fa-angle-right"></i> packege</a>
-         <a href="book.php"> <i class="fas fa-angle-right"></i> book</a>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+         <a href="packeges.html"> <i class="fas fa-angle-right"></i> packeges</a>
+         <a href="book.html"> <i class="fas fa-angle-right"></i> booking</a>
       </div>
 
       <div class="box">
@@ -244,24 +303,22 @@
       </div>
 
       <div class="box">
-         <h3>contact info</h3>
-         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
-         <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
-         <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
-         <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104 </a>
-      </div>
-
-      <div class="box">
          <h3>follow us</h3>
          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
       </div>
+      
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +94 76 121 8033 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +94 11 333 2445 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> TRAVELagency@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> 299 Gall Rd, Colombo 00300</a>
+      </div>
 
    </div>
-
-   <div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
 
 </section>
 
