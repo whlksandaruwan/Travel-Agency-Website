@@ -1,24 +1,16 @@
 <?php
 
-$db_name = 'mysql:host=localhost;dbname=book_db';
-$db_user_name = 'root';
-$db_user_pass = '';
+$servername = "localhost";
+$username = "root";
+$password = "";
+$db_name = "book_db";
+$conn = new mysqli($servername, $username, $password, $db_name);
 
-$conn = new PDO($db_name, $db_user_name, $db_user_pass);
-
-function create_unique_id(){
-   $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-   $characters_lenght = strlen($characters);
-   $random_string = '';
-   for($i = 0; $i < 20; $i++){
-      $random_string .= $characters[mt_rand(0, $characters_lenght - 1)];
-   }
-   return $random_string;
+if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
 }
-
-if(isset($_POST['send'])){
-
-   $id = create_unique_id();
+//Handle from submission
+if($_SERVER["REQUEST_METHOD"] == "POST") {
    $name = $_POST['name'];
    $email = $_POST['email'];
    $phone = $_POST['phone'];
@@ -28,13 +20,15 @@ if(isset($_POST['send'])){
    $arrivals = $_POST['arrivals'];
    $leaving = $_POST['leaving'];
 
-   $insert_book = $conn->prepare("INSERT INTO `book_form`(id, name, email, phone, address, location, guests, arrivals, leaving) VALUES(?,?,?,?,?,?,?,?,?)");
-   $insert_book->execute([$id, $name, $email, $phone, $address, $location, $guests, $arrivals, $leaving]);
+   $sql = "INSERT INTO `book`(`id`, `name`, `email`, `phone`, `address`, `location`, `guests`, `arrival`, `leaving`) VALUES ('$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving')";
 
-   $success_msg[] = 'booked successfully!'; 
-
+   if ($conn->query($sql) === TRUE) {
+      echo "Booking successful!";
+   } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+   }
 }
-
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +37,7 @@ if(isset($_POST['send'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>book</title>
+   <title>Book</title>
 
    <!-- swiper css link  -->
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -53,82 +47,82 @@ if(isset($_POST['send'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="new.css">
-
 </head>
 <body>
    
 <!-- header section starts  -->
-
+ 
 <section class="header">
-
    <a href="home.php" class="logo">travel.</a>
-
    <nav class="navbar">
       <a href="home.php">home</a>
       <a href="about.php">about</a>
-      <a href="packege.php">packege</a>
+      <a href="packege.php">package</a>
       <a href="book.php">book</a>
    </nav>
-
    <div id="menu-btn" class="fas fa-bars"></div>
-
 </section>
-
 <!-- header section ends -->
 
 <div class="heading" style="background:url(images/header-bg-3.png) no-repeat">
-   <h1>book now</h1>
+   <h1>Book now</h1>
 </div>
 
 <!-- booking section starts  -->
-
 <section class="booking">
+   <h1 class="heading-title">Book your trip!</h1>
+   
+   <?php
+   if (!empty($success_msg)) {
+      foreach ($success_msg as $msg) {
+         echo '<div class="success">' . $msg . '</div>';
+      }
+   }
+   if (!empty($error_msg)) {
+      foreach ($error_msg as $msg) {
+         echo '<div class="error">' . $msg . '</div>';
+      }
+   }
+   ?>
 
-   <h1 class="heading-title">book your trip!</h1>
-
-   <form action="" method="post" class="book-form">
-
+   <form action="book.php" method="post" class="book-form">
       <div class="flex">
          <div class="inputBox">
-            <span>name :</span>
-            <input type="text" placeholder="enter your name" maxlength="30" name="name">
+            <span>Name :</span>
+            <input type="text" placeholder="Enter your name" maxlength="30" name="name" required>
          </div>
          <div class="inputBox">
-            <span>email :</span>
-            <input type="email" maxlength="50" placeholder="enter your email" name="email">
+            <span>Email :</span>
+            <input type="email" maxlength="50" placeholder="Enter your email" name="email" required>
          </div>
          <div class="inputBox">
-            <span>phone :</span>
-            <input type="number" maxlength="10" min="0" max="9999999999" placeholder="enter your number" name="phone">
+            <span>Phone :</span>
+            <input type="text" maxlength="10" placeholder="Enter your number" name="phone" required>
          </div>
          <div class="inputBox">
-            <span>address :</span>
-            <input type="text" maxlength="50" placeholder="enter your address" name="address">
+            <span>Address :</span>
+            <input type="text" maxlength="50" placeholder="Enter your address" name="address" required>
          </div>
          <div class="inputBox">
-            <span>where to :</span>
-            <input type="text" placeholder="place you want to visit" name="location" maxlength="50">
+            <span>Where to :</span>
+            <input type="text" placeholder="Place you want to visit" name="location" maxlength="50" required>
          </div>
          <div class="inputBox">
-            <span>how many :</span>
-            <input type="number" min="1" max="99" maxlength="2" placeholder="number of guests" name="guests">
+            <span>How many :</span>
+            <input type="number" min="1" max="99" maxlength="2" placeholder="Number of guests" name="guests" required>
          </div>
          <div class="inputBox">
-            <span>arrivals :</span>
-            <input type="date" name="arrivals">
+            <span>Arrivals :</span>
+            <input type="date" name="arrivals" required>
          </div>
          <div class="inputBox">
-            <span>leaving :</span>
-            <input type="date" name="leaving">
+            <span>Leaving :</span>
+            <input type="date" name="leaving" required>
          </div>
       </div>
-
-      <input type="submit" value="submit" class="btn" name="send">
-
+      <input type="submit" value="Submit" class="btn" name="send">
    </form>
-
 </section>
-
 <!-- booking section ends -->
 
 
