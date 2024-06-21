@@ -329,26 +329,17 @@ section{
    margin-top: 2rem;
 }
 
-.home-offer{
-   text-align: center;
+.banner {
+   width: 100%;  
+   height: 200px;  
+   background-color: white;
+   position: relative;
 }
-
-.home-offer .content{
-   max-width:70rem;
-   margin:0 auto;
-}
-
-.home-offer .content h3{
-   font-size: 3.5rem;
-   text-transform: uppercase;
-   color:var(--black);
-}
-
-.home-offer .content p{
-   font-size: 1.5rem;
-   color:var(--light-black);
-   line-height: 2;
-   padding:1rem 0;
+ 
+ .banner img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; 
 }
 
 .about{
@@ -368,7 +359,7 @@ section{
 
 .about .content{
    flex:1 1 41rem;
-   text-align: center;
+   text-align: left;
 }
 
 .about .content h3{
