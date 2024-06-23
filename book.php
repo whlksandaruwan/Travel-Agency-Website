@@ -46,7 +46,7 @@ $conn->close();
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="new.css">
+   <link rel="stylesheet" href="css/new.css">
 </head>
 <body>
    
@@ -66,10 +66,10 @@ $conn->close();
       <a href="packeges.html">packeges</a>
       &nbsp; &nbsp; &nbsp; &nbsp;
       <a href="book.html">booking</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="contact.html">contact</a>
    </nav>
-   <nav>
-      <a href=“login.html”><i class="fas fa-user" id="login-btn"></i></a>
-   </nav>
+   
    <div id="menu-btn" class="fas fa-bars"></div>
 
 </section>
@@ -208,7 +208,7 @@ $conn->close();
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/New.js"></script>
+<script src="script.js"></script>
 
 <?php
 if(isset($success_msg)){
