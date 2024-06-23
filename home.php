@@ -36,7 +36,7 @@
       <a href="book.html">booking</a>
    </nav>
    <nav>
-      <i class="fas fa-user" id="login-btn"></i>
+      <a href=“login.html”><i class="fas fa-user" id="login-btn"></i></a>
    </nav>
    <div id="menu-btn" class="fas fa-bars"></div>
 
