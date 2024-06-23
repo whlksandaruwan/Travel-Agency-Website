@@ -119,6 +119,16 @@ section{
    color:var(--black);
 }
 
+#login-btn{
+   font-size: 20px;
+   width: 50px;
+   height: 5px;
+}
+
+.header #login-btn:hover{
+   color:var(--main-color)
+}
+
 .header .navbar a:hover{
    color:var(--main-color);
 }
