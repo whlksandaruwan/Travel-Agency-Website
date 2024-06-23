@@ -186,7 +186,7 @@ $conn->close();
          <h3>contact info</h3>
          <a href="#"> <i class="fas fa-phone"></i> +94 76 121 8033 </a>
          <a href="#"> <i class="fas fa-phone"></i> +94 11 333 2445 </a>
-         <a href="#"> <i class="fas fa-envelope"></i> TRAVELagency@gmail.com </a>
+         <a href="#"> <i class="fas fa-envelope"></i> travelagency2003@gmail.com </a>
          <a href="#"> <i class="fas fa-map"></i> 299 Gall Rd, Colombo 00300</a>
       </div>
 

@@ -1,58 +1,65 @@
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 
-menu.onclick = () =>{
+menu.onclick = () => {
    menu.classList.toggle('fa-times');
    navbar.classList.toggle('active');
 };
 
-window.onscroll = () =>{
+window.onscroll = () => {
    menu.classList.remove('fa-times');
    navbar.classList.remove('active');
 };
 
+// JavaScript for Input Number Length Restriction
 document.querySelectorAll('input[type="number"]').forEach(inputNumber => {
-   inputNumber.oninput = () =>{
-      if(inputNumber.value.length > inputNumber.maxLength) inputNumber.value = inputNumber.value.slice(0, inputNumber.maxLength);
+   inputNumber.oninput = () => {
+      if (inputNumber.value.length > inputNumber.maxLength) {
+         inputNumber.value = inputNumber.value.slice(0, inputNumber.maxLength);
+      }
    };
 });
 
-var swiper = new Swiper(".home-slider", {
-   loop:true,
+// JavaScript for Swiper Sliders
+var swiperHome = new Swiper(".home-slider", {
+   loop: true,
    navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
    },
 });
 
-var swiper = new Swiper(".reviews-slider", {
-   grabCursor:true,
-   loop:true,
-   autoHeight:true,
+var swiperReviews = new Swiper(".reviews-slider", {
+   grabCursor: true,
+   loop: true,
+   autoHeight: true,
    spaceBetween: 20,
    breakpoints: {
       0: {
-        slidesPerView: 1,
+         slidesPerView: 1,
       },
       700: {
-        slidesPerView: 2,
+         slidesPerView: 2,
       },
       1000: {
-        slidesPerView: 3,
+         slidesPerView: 3,
       },
    },
 });
 
+// JavaScript for Load More Button
 let loadMoreBtn = document.querySelector('.packeges .load-more .btn');
 let currentItem = 3;
 
-loadMoreBtn.onclick = () =>{
+loadMoreBtn.onclick = () => {
    let boxes = [...document.querySelectorAll('.packeges .box-container .box')];
-   for (var i = currentItem; i < currentItem + 3; i++){
-      boxes[i].style.display = 'inline-block';
-   };
+   for (var i = currentItem; i < currentItem + 3; i++) {
+      if (boxes[i]) {
+         boxes[i].style.display = 'inline-block';
+      }
+   }
    currentItem += 3;
-   if(currentItem >= boxes.length){
+   if (currentItem >= boxes.length) {
       loadMoreBtn.style.display = 'none';
    }
-}
+};
