@@ -67,10 +67,6 @@ $conn->close();
       &nbsp; &nbsp; &nbsp; &nbsp;
       <a href="book.html">booking</a>
    </nav>
-   <nav>
-      <i class="fas fa-user" id="login-btn"></i>
-   </nav>
-
    <div id="menu-btn" class="fas fa-bars"></div>
 
 </section>
@@ -209,7 +205,7 @@ $conn->close();
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="js/New.js"></script>
 
 <?php
 if(isset($success_msg)){
