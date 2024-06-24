@@ -164,12 +164,13 @@ $conn->close();
          <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
          <a href="packeges.html"> <i class="fas fa-angle-right"></i> packeges</a>
          <a href="book.html"> <i class="fas fa-angle-right"></i> booking</a>
+         <a href="contact.html"> <i class="fas fa-angle-right"></i> contact</a>
       </div>
 
       <div class="box">
          <h3>extra links</h3>
-         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
-         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <a href="Contact.html"> <i class="fas fa-angle-right"></i> ask questions</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> about us</a>
          <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
          <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
       </div>
